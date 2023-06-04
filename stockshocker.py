@@ -11,8 +11,6 @@ for i in datesplit:
   else:
     start_date += i
 
-print(start_date)
-
 def evaluateInvestment():
   stocksymbol = input("Stock Symbol: ")
   data = yf.download(stocksymbol, start_date, today)
